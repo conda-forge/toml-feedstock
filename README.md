@@ -14,9 +14,7 @@ Summary: Python lib for TOML.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/toml-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/toml-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/toml-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/toml-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/toml-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/toml-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/toml-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/toml-feedstock)
 
 Current release info
 ====================
