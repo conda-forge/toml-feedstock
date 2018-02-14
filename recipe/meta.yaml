@@ -1,7 +1,6 @@
 {% set name = "toml" %}
 {% set version = "0.9.3.1" %}
-{% set hash_type = "sha256" %}
-{% set hash = "e1e8c220046889234df5ec688d6f97b734fc4a08a6d8edfc176f4e6abf90cfb5" %}
+{% set sha256 = "e1e8c220046889234df5ec688d6f97b734fc4a08a6d8edfc176f4e6abf90cfb5" %}
 
 package:
   name: {{ name|lower }}
@@ -10,16 +9,17 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ sha256|lower }}
 
 build:
-  number: 1
+  number: 2
   noarch: python
-  script: python setup.py install --record=record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
+    - pip
 
   run:
     - python
@@ -27,6 +27,9 @@ requirements:
 test:
   imports:
     - toml
+  commands:
+    - conda inspect linkages -p $PREFIX toml  # [not win]
+    - conda inspect objects -p $PREFIX toml   # [osx]
 
 about:
   home: https://github.com/uiri/toml
@@ -38,3 +41,4 @@ about:
 extra:
   recipe-maintainers:
     - rlaverde
+    - holgern
