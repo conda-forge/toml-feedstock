@@ -1,6 +1,6 @@
 {% set name = "toml" %}
-{% set version = "0.9.3.1" %}
-{% set sha256 = "e1e8c220046889234df5ec688d6f97b734fc4a08a6d8edfc176f4e6abf90cfb5" %}
+{% set version = "0.9.4" %}
+{% set sha256 = "8e86bd6ce8cc11b9620cb637466453d94f5d57ad86f17e98a98d1f73e3baab2d" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256|lower }}
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
