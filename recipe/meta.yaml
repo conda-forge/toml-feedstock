@@ -1,6 +1,6 @@
 {% set name = "toml" %}
-{% set version = "0.9.4" %}
-{% set sha256 = "8e86bd6ce8cc11b9620cb637466453d94f5d57ad86f17e98a98d1f73e3baab2d" %}
+{% set version = "0.9.6" %}
+{% set sha256 = "380178cde50a6a79f9d2cf6f42a62a5174febe5eea4126fe4038785f1d888d42" %}
 
 package:
   name: {{ name|lower }}
