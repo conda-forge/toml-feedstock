@@ -5,11 +5,9 @@ Home: https://github.com/uiri/toml
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/toml-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python lib for TOML.
-
-
 
 Current build status
 ====================
