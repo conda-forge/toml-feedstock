@@ -18,11 +18,11 @@ build:
 
 requirements:
   build:
-    - python
+    - python >=2.7
     - pip
 
   run:
-    - python
+    - python >=2.7
 
 test:
   imports:
