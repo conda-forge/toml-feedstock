@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256|lower }}
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -33,6 +33,7 @@ test:
 
 about:
   home: https://github.com/uiri/toml
+  dev_url: https://github.com/uiri/toml
   license: MIT
   license_family: MIT
   license_file: LICENSE
